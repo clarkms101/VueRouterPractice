@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <router-link class="nav-link" to="/index">Hello</router-link>
+              <router-link class="nav-link" :to="{name:'首頁'}">Hello</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/page">Page</router-link>
