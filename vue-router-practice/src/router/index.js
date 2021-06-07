@@ -10,6 +10,11 @@ export default new VueRouter({
             name: '首頁',
             path: '/index',
             component: Hello
-        }
+        },
+        // {
+        //     name: '首頁',
+        //     path: '/index',
+        //     component: Hello
+        // }
     ]
 })
