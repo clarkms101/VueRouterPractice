@@ -15,13 +15,19 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      user: {
+        picture: {},
+      }
+    };
   },
   created() {
     const id = this.$route.params.id;
     console.log(id);
-    this.$http.get(`https://randomuser.me/api/?seed=${id}`).then(response => {
+    const vm = this;
+    this.$http.get('https://randomuser.me/api/').then(response => {
       console.log(response);
+      vm.user = response.data.result[0];
     });
   }
 };
