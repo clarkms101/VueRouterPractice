@@ -3,13 +3,13 @@
     <label>menu</label>
     <ul class="nav">
       <li class="nav-item">
-        <router-link class="nav-link" to="/page/">卡片 1</router-link>
+        <router-link class="nav-link" to="/page/card1">卡片 1</router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="/page/child2">卡片 2</router-link>
+        <router-link class="nav-link" to="/page/card2">卡片 2</router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="/page/child/">卡片 3</router-link>
+        <router-link class="nav-link" to="/page/card3">卡片 3</router-link>
       </li>
     </ul>
   </div>

@@ -2,9 +2,9 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Hello from '@/components/HelloWorld';
 import Page from '@/components/pages/page';
-import child from '@/components/pages/child';
-import child2 from '@/components/pages/child2';
-import child3 from '@/components/pages/child3';
+import card1 from '@/components/pages/card1';
+import card2 from '@/components/pages/card2';
+import card3 from '@/components/pages/card3';
 import Menu from '@/components/pages/menu';
 
 Vue.use(VueRouter);
@@ -26,19 +26,24 @@ export default new VueRouter({
             },
             children: [
                 {
-                    name: '卡片 1',
+                    name: '卡片 預設',
                     path: '', // 不填會變成預設帶入的路徑
-                    component: child
+                    component: card1
+                },
+                {
+                    name: '卡片 1',
+                    path: 'card1',
+                    component: card1
                 },
                 {
                     name: '卡片 2',
-                    path: 'child2',
-                    component: child2
+                    path: 'card2',
+                    component: card2
                 },
                 {
                     name: '卡片 3',
-                    path: 'child/',
-                    component: child3
+                    path: 'card3',
+                    component: card3
                 }
             ]
         }
