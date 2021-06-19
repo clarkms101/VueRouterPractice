@@ -1,5 +1,6 @@
 <template>
   <div>
+    <label>card2</label>
     <card/>
   </div>
 </template>
